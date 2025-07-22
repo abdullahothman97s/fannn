@@ -225,23 +225,23 @@ const Gallery: React.FC = () => {
               {/* Close Button */}
               <button
                 onClick={() => setSelectedImage(null)}
-                className="absolute top-4 right-4 bg-white/20 hover:bg-white/30 rounded-full p-2 transition-colors z-10"
+                className="absolute top-4 right-4 bg-white/90 hover:bg-white text-gray-900 hover:text-black rounded-full p-3 transition-all duration-300 z-10 shadow-lg hover:shadow-xl transform hover:scale-110"
               >
-                <X className="w-6 h-6 text-white" />
+                <X className="w-6 h-6" />
               </button>
 
               {/* Navigation */}
               <button
                 onClick={prevImage}
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 rounded-full p-2 transition-colors"
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-900 hover:text-black rounded-full p-3 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-110"
               >
-                <ChevronLeft className="w-6 h-6 text-white" />
+                <ChevronLeft className="w-6 h-6" />
               </button>
               <button
                 onClick={nextImage}
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 rounded-full p-2 transition-colors"
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-900 hover:text-black rounded-full p-3 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-110"
               >
-                <ChevronRight className="w-6 h-6 text-white" />
+                <ChevronRight className="w-6 h-6" />
               </button>
 
               {/* Image */}
