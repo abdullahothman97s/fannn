@@ -103,7 +103,7 @@ const Footer: React.FC = () => {
                 <MapPin className="w-5 h-5 text-blue-400 mt-0.5" />
                 <div>
                   <p className="text-gray-300 font-montserrat">{language === 'ar' ? 'القاهرة، مصر' : 'Cairo, Egypt'}</p>
-                  <p className="text-sm text-gray-400 font-montserrat">{language === 'ar' ? 'بالقرب من وسط البلد' : 'Near downtown area'}</p>
+                  <p className="text-sm text-gray-400 font-montserrat">{language === 'ar' ? '49 شارع نوبار - سيتي مول - الدور الأرضي' : '49 Nubar Street - City Mall - Ground Floor'}</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">

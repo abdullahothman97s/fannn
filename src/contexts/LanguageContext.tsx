@@ -104,6 +104,7 @@ const translations = {
     phoneNumber: 'Phone',
     emailAddress: 'Email',
     workingHours: 'Working Hours',
+    findUs: 'Find Us',
     
     // Common
     learnMore: 'Learn More',
@@ -207,6 +208,7 @@ const translations = {
     phoneNumber: 'الهاتف',
     emailAddress: 'البريد الإلكتروني',
     workingHours: 'ساعات العمل',
+    findUs: 'زور فرعنا',
     
     // Common
     learnMore: 'اعرف المزيد',

@@ -201,7 +201,7 @@ const Booking: React.FC = () => {
                   <div className="space-y-2 text-white/80 font-montserrat">
                     <p>📱 {language === 'ar' ? 'ابعت صورة جهازك على الواتساب' : 'Send your device photo on WhatsApp'}</p>
                     <p>💬 {language === 'ar' ? 'استشارة مجانية ليك وهنساعدك' : 'Free consultation and we\'ll help you'}</p>
-                    <p>📍 {language === 'ar' ? 'القاهرة - وسط البلد - سيتي مول شارع محمد محمود' : 'Cairo - Downtown - City Mall Mohamed Mahmoud Street'}</p>
+                    <p>📍 {language === 'ar' ? 'القاهرة - وسط البلد - 49 شارع نوبار - سيتي مول - الدور الأرضي' : 'Cairo - Downtown - 49 Nubar Street - City Mall - Ground Floor'}</p>
                     <p>📞 {language === 'ar' ? 'الهاتف: 01091054529' : 'Phone: 01091054529'}</p>
                     <p>⏰ {language === 'ar' ? 'يومياً من الساعة 12 ظهراً الى 9 مساءً' : 'Daily from 12:00 PM to 9:00 PM'}</p>
                     <p className="text-primary-300 font-semibold">🎯 {language === 'ar' ? 'لو عايز الجودة والأمان مستنينك في الفنان' : 'If you want quality and safety, we\'re waiting for you at El Fannan'}</p>
