@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
         <div className="text-center max-w-5xl mx-auto">
           {/* Main Heading */}
           <div className="mb-6">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 leading-tight font-montserrat">
+            <h1 className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 leading-tight ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'}`}>
               <span className="gradient-text">
                 {t('heroTitle')}
               </span>
@@ -44,19 +44,19 @@ const Hero: React.FC = () => {
             <div className="flex items-center justify-center gap-2 sm:gap-4 mb-6">
               <Keyboard className="w-6 h-6 sm:w-8 sm:h-8 text-primary-400" />
               <Zap className="w-4 h-4 sm:w-6 sm:h-6 text-yellow-400" />
-              <span className="text-base sm:text-lg md:text-xl text-gray-300 font-montserrat">
+              <span className={`text-base sm:text-lg md:text-xl text-gray-300 ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'}`}>
                 {t('keyboardSpecialist')}
               </span>
             </div>
           </div>
 
           {/* Subtitle */}
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed font-montserrat px-4">
+          <p className={`text-lg sm:text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'} px-4`}>
             {t('heroSubtitle')}
           </p>
 
           {/* Quality and Safety Message */}
-          <p className="text-xl sm:text-2xl md:text-3xl text-primary-400 mb-8 font-bold font-montserrat px-4">
+          <p className={`text-xl sm:text-2xl md:text-3xl text-primary-400 mb-8 font-bold ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'} px-4`}>
             {language === 'ar' ? 'لو عايز الجودة والأمان .. مستنيينك في الفنان' : 'If you want quality and safety .. we\'re waiting for you at El Fannan'}
           </p>
 
@@ -64,14 +64,14 @@ const Hero: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 px-4">
             <button
               onClick={() => scrollToSection('booking')}
-              className="group glow-button bg-gradient-to-r from-primary-500 to-primary-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:from-primary-600 hover:to-primary-700 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1 font-montserrat"
+              className={`group glow-button bg-gradient-to-r from-primary-500 to-primary-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:from-primary-600 hover:to-primary-700 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1 ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'}`}
             >
               {t('contactUs')}
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
             </button>
             <button
               onClick={() => window.open('https://www.tiktok.com/@fannanforlaser', '_blank')}
-              className="group glow-button bg-gray-800/80 backdrop-blur-sm text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-gray-700/80 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1 border border-gray-600 font-montserrat"
+              className={`group glow-button bg-gray-800/80 backdrop-blur-sm text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-gray-700/80 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1 border border-gray-600 ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'}`}
             >
               <Play className="w-4 h-4 sm:w-5 sm:h-5" />
               {t('viewOurWork')}
@@ -81,20 +81,20 @@ const Hero: React.FC = () => {
           {/* Featured Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 mt-8 px-4">
             <div className="text-center">
-              <div className="text-2xl sm:text-3xl font-bold text-primary-400 mb-2 font-montserrat">✨</div>
-              <div className="text-xs sm:text-sm text-gray-400 font-montserrat">{t('professionalWork')}</div>
+              <div className={`text-2xl sm:text-3xl font-bold text-primary-400 mb-2 ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'}`}>✨</div>
+              <div className={`text-xs sm:text-sm text-gray-400 ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'}`}>{t('professionalWork')}</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl sm:text-3xl font-bold text-primary-400 mb-2 font-montserrat">🛡️</div>
-              <div className="text-xs sm:text-sm text-gray-400 font-montserrat">{t('guaranteedSafety')}</div>
+              <div className={`text-2xl sm:text-3xl font-bold text-primary-400 mb-2 ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'}`}>🛡️</div>
+              <div className={`text-xs sm:text-sm text-gray-400 ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'}`}>{t('guaranteedSafety')}</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl sm:text-3xl font-bold text-primary-400 mb-2 font-montserrat">⚡</div>
-              <div className="text-xs sm:text-sm text-gray-400 font-montserrat">{t('fastDelivery')}</div>
+              <div className={`text-2xl sm:text-3xl font-bold text-primary-400 mb-2 ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'}`}>⚡</div>
+              <div className={`text-xs sm:text-sm text-gray-400 ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'}`}>{t('fastDelivery')}</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl sm:text-3xl font-bold text-primary-400 mb-2 font-montserrat">🎯</div>
-              <div className="text-xs sm:text-sm text-gray-400 font-montserrat">{t('precisionWork')}</div>
+              <div className={`text-2xl sm:text-3xl font-bold text-primary-400 mb-2 ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'}`}>🎯</div>
+              <div className={`text-xs sm:text-sm text-gray-400 ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'}`}>{t('precisionWork')}</div>
             </div>
           </div>
         </div>

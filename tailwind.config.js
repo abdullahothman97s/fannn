@@ -7,7 +7,8 @@ export default {
       fontFamily: {
         'montserrat': ['Montserrat', 'sans-serif'],
         'sans': ['Montserrat', 'system-ui', 'sans-serif'],
-        'arabic': ['Tajwal', 'sans-serif'],
+        'arabic': ['Tajwal', 'system-ui', 'sans-serif'],
+        'tajwal': ['Tajwal', 'system-ui', 'sans-serif'],
       },
       colors: {
         primary: {

@@ -45,31 +45,31 @@ const Header: React.FC = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection('home')}
-              className="text-gray-700 dark:text-gray-300 hover:text-primary-500 transition-colors font-medium font-montserrat px-4"
+              className={`text-gray-700 dark:text-gray-300 hover:text-primary-500 transition-colors font-medium ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'} px-4`}
             >
               {t('home')}
             </button>
             <button
               onClick={() => scrollToSection('services')}
-              className="text-gray-700 dark:text-gray-300 hover:text-primary-500 transition-colors font-medium font-montserrat px-4"
+              className={`text-gray-700 dark:text-gray-300 hover:text-primary-500 transition-colors font-medium ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'} px-4`}
             >
               {t('services')}
             </button>
             <button
               onClick={() => scrollToSection('gallery')}
-              className="text-gray-700 dark:text-gray-300 hover:text-primary-500 transition-colors font-medium font-montserrat px-4"
+              className={`text-gray-700 dark:text-gray-300 hover:text-primary-500 transition-colors font-medium ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'} px-4`}
             >
               {t('gallery')}
             </button>
             <button
               onClick={() => scrollToSection('booking')}
-              className="text-gray-700 dark:text-gray-300 hover:text-primary-500 transition-colors font-medium font-montserrat px-4"
+              className={`text-gray-700 dark:text-gray-300 hover:text-primary-500 transition-colors font-medium ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'} px-4`}
             >
               {t('booking')}
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="text-gray-700 dark:text-gray-300 hover:text-primary-500 transition-colors font-medium font-montserrat px-4"
+              className={`text-gray-700 dark:text-gray-300 hover:text-primary-500 transition-colors font-medium ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'} px-4`}
             >
               {t('contact')}
             </button>
@@ -91,7 +91,7 @@ const Header: React.FC = () => {
               className="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors flex items-center space-x-1"
             >
               <Languages className="w-5 h-5 text-gray-700 dark:text-gray-300" />
-              <span className="text-sm font-medium text-gray-700 dark:text-gray-300 font-montserrat">{language === 'en' ? 'AR' : 'EN'}</span>
+              <span className={`text-sm font-medium text-gray-700 dark:text-gray-300 ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'}`}>{language === 'en' ? 'AR' : 'EN'}</span>
             </button>
 
             {/* Mobile Menu Toggle */}
@@ -110,31 +110,31 @@ const Header: React.FC = () => {
             <div className="flex flex-col space-y-4 px-4">
               <button
                 onClick={() => scrollToSection('home')}
-                className="text-left py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 transition-colors font-montserrat"
+                className={`text-left py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 transition-colors ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'}`}
               >
                 {t('home')}
               </button>
               <button
                 onClick={() => scrollToSection('services')}
-                className="text-left py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 transition-colors font-montserrat"
+                className={`text-left py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 transition-colors ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'}`}
               >
                 {t('services')}
               </button>
               <button
                 onClick={() => scrollToSection('gallery')}
-                className="text-left py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 transition-colors font-montserrat"
+                className={`text-left py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 transition-colors ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'}`}
               >
                 {t('gallery')}
               </button>
               <button
                 onClick={() => scrollToSection('booking')}
-                className="text-left py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 transition-colors font-montserrat"
+                className={`text-left py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 transition-colors ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'}`}
               >
                 {t('booking')}
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
-                className="text-left py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 transition-colors font-montserrat"
+                className={`text-left py-2 text-gray-700 dark:text-gray-300 hover:text-primary-500 transition-colors ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'}`}
               >
                 {t('contact')}
               </button>
