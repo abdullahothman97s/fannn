@@ -125,7 +125,7 @@ const translations = {
     // Hero
     heroTitle: 'تعريب الكيبورد بالليزر بإحترافية',
     heroSubtitle: 'تعريب الكيبورد بالليزر بإحترافية لجميع اللغات وخدمات حفر الليزر والدعايه والاعلان',
-    keyboardSpecialist: 'متخصصون في تعريب الكيبوردات',
+    keyboardSpecialist: 'متخصصين في تعريب الكيبوردات',
     contactUs: 'هل الليزر خطر ولا لا ؟',
     viewOurWork: 'شوف سابقة اعمالنا',
     professionalWork: 'شغل احترافي',
