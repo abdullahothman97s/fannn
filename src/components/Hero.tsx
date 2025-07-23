@@ -14,8 +14,23 @@ const Hero: React.FC = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center bg-black relative overflow-hidden">
+      {/* Video Background */}
+      <div className="absolute inset-0 z-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover opacity-50"
+        >
+          <source src="/Fannan_Laser.mp4" type="video/mp4" />
+        </video>
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/30"></div>
+      </div>
+
       {/* Gaming Keyboard Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-10 z-10">
         <div className="absolute top-20 left-10 w-16 h-16 border-2 border-primary-500 rounded-lg animate-pulse"></div>
         <div className="absolute top-32 right-20 w-12 h-12 border-2 border-primary-400 rounded-lg animate-pulse delay-500"></div>
         <div className="absolute bottom-40 left-20 w-20 h-20 border-2 border-primary-600 rounded-lg animate-pulse delay-1000"></div>
@@ -26,13 +41,13 @@ const Hero: React.FC = () => {
       </div>
 
       {/* RGB Glow Effects */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-10">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary-500/20 rounded-full filter blur-xl animate-pulse"></div>
         <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-red-500/10 rounded-full filter blur-xl animate-pulse delay-1000"></div>
         <div className="absolute bottom-1/4 left-1/3 w-80 h-80 bg-primary-600/15 rounded-full filter blur-xl animate-pulse delay-2000"></div>
       </div>
 
-      <div className="container mx-auto px-4 py-20 relative z-10">
+      <div className="container mx-auto px-4 py-20 relative z-20">
         <div className="text-center max-w-5xl mx-auto">
           {/* Main Heading */}
           <div className="mb-6">
@@ -101,7 +116,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Floating Keyboard Icons */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-10">
         <Keyboard className="absolute top-20 left-10 w-6 h-6 sm:w-8 sm:h-8 text-primary-400/30 animate-pulse" />
         <Keyboard className="absolute top-40 right-20 w-4 h-4 sm:w-6 sm:h-6 text-primary-300/20 animate-pulse delay-500" />
         <Keyboard className="absolute bottom-32 left-20 w-8 h-8 sm:w-10 sm:h-10 text-primary-500/25 animate-pulse delay-1000" />
