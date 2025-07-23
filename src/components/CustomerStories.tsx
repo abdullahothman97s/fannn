@@ -260,7 +260,7 @@ const CustomerStories: React.FC = () => {
                   const element = document.getElementById('booking');
                   if (element) element.scrollIntoView({ behavior: 'smooth' });
                 }}
-                className="glow-button bg-gradient-to-r from-primary-500 to-primary-600 text-white px-8 py-3 rounded-full font-semibold hover:from-primary-600 hover:to-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 font-montserrat"
+                className="glow-button cta-pulse urgent-cta bg-gradient-to-r from-primary-500 to-primary-600 text-white px-8 py-3 rounded-full font-semibold hover:from-primary-600 hover:to-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 font-montserrat"
               >
                 شوف التعريب بيتعمل ازاي عشان تطمن
               </button>

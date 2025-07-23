@@ -211,7 +211,7 @@ const Gallery: React.FC = () => {
           <div className="text-center mt-12">
             <button
               onClick={loadMore}
-              className="glow-button bg-gradient-to-r from-primary-500 to-primary-600 text-white px-8 py-3 rounded-full font-semibold hover:from-primary-600 hover:to-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 font-montserrat"
+              className="glow-button cta-bounce bg-gradient-to-r from-primary-500 to-primary-600 text-white px-8 py-3 rounded-full font-semibold hover:from-primary-600 hover:to-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 font-montserrat"
             >
               {language === 'ar' ? 'عرض المزيد' : 'Load More'}
             </button>

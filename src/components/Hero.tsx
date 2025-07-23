@@ -64,16 +64,16 @@ const Hero: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 px-4">
             <button
               onClick={() => scrollToSection('booking')}
-              className={`group glow-button bg-gradient-to-r from-primary-500 to-primary-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:from-primary-600 hover:to-primary-700 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1 ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'}`}
+              className={`group glow-button cta-pulse urgent-cta bg-gradient-to-r from-primary-500 to-primary-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:from-primary-600 hover:to-primary-700 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1 ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'}`}
             >
               {t('contactUs')}
-              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform wiggle-animation" />
             </button>
             <button
               onClick={() => window.open('https://www.tiktok.com/@fannanforlaser', '_blank')}
-              className={`group glow-button bg-gray-800/80 backdrop-blur-sm text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-gray-700/80 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1 border border-gray-600 ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'}`}
+              className={`group glow-button cta-bounce bg-gray-800/80 backdrop-blur-sm text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-gray-700/80 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1 border border-gray-600 ${language === 'ar' ? 'font-tajwal' : 'font-montserrat'}`}
             >
-              <Play className="w-4 h-4 sm:w-5 sm:h-5" />
+              <Play className="w-4 h-4 sm:w-5 sm:h-5 float-animation" />
               {t('viewOurWork')}
             </button>
           </div>

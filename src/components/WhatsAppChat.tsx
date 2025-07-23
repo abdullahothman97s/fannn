@@ -18,9 +18,9 @@ const WhatsAppChat: React.FC = () => {
       <div className="fixed bottom-6 right-6 z-50">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 animate-pulse"
+          className="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 cta-pulse urgent-cta"
         >
-          <MessageCircle className="w-6 h-6" />
+          <MessageCircle className="w-6 h-6 float-animation" />
         </button>
       </div>
 
@@ -102,9 +102,9 @@ const WhatsAppChat: React.FC = () => {
           <div className="p-4 border-t border-gray-700">
             <button
               onClick={handleWhatsAppClick}
-              className="w-full glow-button bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2 font-montserrat"
+              className="w-full glow-button cta-pulse bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2 font-montserrat"
             >
-              <MessageCircle className="w-4 h-4" />
+              <MessageCircle className="w-4 h-4 wiggle-animation" />
               {t('chatNow')}
             </button>
           </div>

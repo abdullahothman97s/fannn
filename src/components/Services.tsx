@@ -139,11 +139,11 @@ const Services: React.FC = () => {
                   
                   <button 
                     onClick={() => window.open('https://api.whatsapp.com/send?phone=201091054529&text=مرحباً!%20أريد%20معرفة%20المزيد%20عن%20خدمات%20تعريب%20الكيبورد%20بالليزر.', '_blank')}
-                    className={`group/btn flex items-center gap-2 ${colorClasses.text} font-medium hover:gap-3 transition-all duration-300 font-montserrat`}
+                    className={`group/btn flex items-center gap-2 ${colorClasses.text} font-medium hover:gap-3 transition-all duration-300 font-montserrat cta-shake`}
                   >
                     {t('knowPrices')}
-                    <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                    <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                    <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform wiggle-animation" />
+                    <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform wiggle-animation" />
                   </button>
                 </div>
               </div>
@@ -163,7 +163,7 @@ const Services: React.FC = () => {
               </p>
               <button 
                 onClick={() => window.open('https://api.whatsapp.com/send?phone=201091054529&text=مرحباً!%20أريد%20معرفة%20المزيد%20عن%20خدمات%20تعريب%20الكيبورد%20بالليزر.', '_blank')}
-                className="glow-button bg-gradient-to-r from-primary-500 to-primary-600 text-white px-8 py-3 rounded-full font-semibold hover:from-primary-600 hover:to-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 font-montserrat"
+                className="glow-button cta-glow-pulse urgent-cta bg-gradient-to-r from-primary-500 to-primary-600 text-white px-8 py-3 rounded-full font-semibold hover:from-primary-600 hover:to-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 font-montserrat"
               >
                 {t('contactNow')}
               </button>

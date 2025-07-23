@@ -78,17 +78,17 @@ const Booking: React.FC = () => {
                 <div className="space-y-4">
                   <button
                     onClick={handleWhatsAppBooking}
-                    className="w-full glow-button bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-3 shadow-lg hover:shadow-xl transform hover:-translate-y-1 font-montserrat"
+                    className="w-full glow-button cta-pulse urgent-cta bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-3 shadow-lg hover:shadow-xl transform hover:-translate-y-1 font-montserrat"
                   >
-                    <MessageCircle className="w-6 h-6" />
+                    <MessageCircle className="w-6 h-6 float-animation" />
                     {language === 'ar' ? 'احجز عبر الواتساب' : 'Book via WhatsApp'}
                   </button>
 
                   <button
                     onClick={handlePhoneCall}
-                    className="w-full glow-button bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-3 shadow-lg hover:shadow-xl transform hover:-translate-y-1 font-montserrat"
+                    className="w-full glow-button cta-bounce bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-3 shadow-lg hover:shadow-xl transform hover:-translate-y-1 font-montserrat"
                   >
-                    <Phone className="w-6 h-6" />
+                    <Phone className="w-6 h-6 wiggle-animation" />
                     {language === 'ar' ? 'اتصل الآن: 01091054529' : 'Call Now: 01091054529'}
                   </button>
                 </div>

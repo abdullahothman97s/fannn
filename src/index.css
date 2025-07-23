@@ -142,6 +142,115 @@ button, a, [role="button"], input, textarea, select {
   }
 }
 
+/* CTA Button Animations */
+.cta-pulse {
+  animation: ctaPulse 2s infinite;
+}
+
+.cta-bounce {
+  animation: ctaBounce 2s infinite;
+}
+
+.cta-shake {
+  animation: ctaShake 3s infinite;
+}
+
+.cta-glow-pulse {
+  animation: ctaGlowPulse 2s infinite;
+}
+
+@keyframes ctaPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes ctaBounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes ctaShake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-2px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(2px);
+  }
+}
+
+@keyframes ctaGlowPulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(255, 50, 52, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(255, 50, 52, 1), 0 0 60px rgba(255, 50, 52, 0.8);
+  }
+}
+
+/* Floating animation for icons */
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Wiggle animation for arrows */
+.wiggle-animation {
+  animation: wiggle 1s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+}
+
+/* Urgent CTA animation */
+.urgent-cta {
+  animation: urgentPulse 1.5s infinite;
+}
+
+@keyframes urgentPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 50, 52, 0.7);
+  }
+  70% {
+    transform: scale(1.02);
+    box-shadow: 0 0 0 10px rgba(255, 50, 52, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 50, 52, 0);
+  }
+}
 /* Custom gradient backgrounds */
 .gradient-bg {
   background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #ff3234 100%);
