@@ -65,22 +65,25 @@ const GoogleMaps: React.FC = () => {
                   <div className="bg-yellow-500/20 rounded-full p-3">
                     <Clock className="w-6 h-6 text-yellow-400" />
                   </div>
-                  <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
                     <h4 className="font-semibold text-gray-900 dark:text-white mb-1 font-montserrat">
                       {t('workingHours')}
                     </h4>
-                    <div className="text-gray-600 dark:text-gray-300 space-y-1 font-montserrat">
+                    <div className="text-gray-600 dark:text-gray-300 font-montserrat">
                       <p>{language === 'ar' ? 'يومياً من الساعة 12 ظهراً الى 9 مساءً' : 'Daily from 12:00 PM to 9:00 PM'}</p>
                     </div>
-                    <a
+                  </div>
+                </div>
+                
+                <div className="mt-6">
+                  <a
                       href="https://api.whatsapp.com/send?phone=201091054529&text=مرحباً!%20أريد%20معرفة%20المزيد%20عن%20خدمات%20تعريب%20الكيبورد%20بالليزر."
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="glow-button bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition-colors text-sm text-center shadow-lg hover:shadow-xl transform hover:-translate-y-1 font-montserrat w-full"
+                      className="glow-button bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition-colors text-sm text-center shadow-lg hover:shadow-xl transform hover:-translate-y-1 font-montserrat w-full block"
                     >
                       {language === 'ar' ? 'واتساب' : 'WhatsApp'}
                     </a>
-                  </div>
                 </div>
               </div>
 
