@@ -19,7 +19,7 @@ const Services: React.FC = () => {
       title: t('keyboardTitle'),
       description: t('keyboardDesc'),
       color: 'secondary',
-      image: 'https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=500',
+      image: 'https://i.postimg.cc/jdyyyXs4/image.jpg',
       features: [t('arabicRegular'), t('arabicDiacritics'), t('rgbCompatible')]
     },
     {
