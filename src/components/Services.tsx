@@ -35,7 +35,7 @@ const Services: React.FC = () => {
       title: t('repairTitle'),
       description: t('repairDesc'),
       color: 'warning',
-      image: 'https://images.pexels.com/photos/205421/pexels-photo-205421.jpeg?auto=compress&cs=tinysrgb&w=500',
+      image: 'https://i.postimg.cc/Qt5syqnD/Laptop-Repair-vs-Replacement-When-to-Choose-What-467fc7ec.jpg',
       features: [t('damageRepair'), t('restoration'), t('qualityGuarantee')]
     }
   ];
