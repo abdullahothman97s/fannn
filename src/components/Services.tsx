@@ -11,7 +11,7 @@ const Services: React.FC = () => {
       title: t('laptopTitle'),
       description: t('laptopDesc'),
       color: 'primary',
-      image: 'https://images.pexels.com/photos/205421/pexels-photo-205421.jpeg?auto=compress&cs=tinysrgb&w=500',
+      image: 'https://i.postimg.cc/WpkPNS8c/after.png',
       features: [t('arabicLayoutWindows'), t('arabicDiacriticsWindows'), t('macDevices'), t('customWork')]
     },
     {
