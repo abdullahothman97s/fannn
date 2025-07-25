@@ -27,7 +27,7 @@ const Services: React.FC = () => {
       title: t('medalTitle'),
       description: t('medalDesc'),
       color: 'accent',
-      image: 'https://images.pexels.com/photos/1652209/pexels-photo-1652209.jpeg?auto=compress&cs=tinysrgb&w=500',
+      image: 'https://i.postimg.cc/6p934Fbv/NYC-Marathon-medal-laser-engraving-service-1024x768.jpg',
       features: [t('corporateBranding'), t('customDesigns'), t('bulkOrders')]
     },
     {
