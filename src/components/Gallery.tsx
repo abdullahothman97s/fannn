@@ -24,7 +24,7 @@ const Gallery: React.FC = () => {
     const medalTypes = ['Corporate Awards', 'Sports Medals', 'Achievement Trophies', 'Custom Plaques', 'Promotional Items', 'Company Logos', 'Event Medals', 'Recognition Awards', 'Championship Cups', 'Memorial Plaques'];
 
     const images = [
-      'https://i.postimg.cc/1zkJRGD9/image.png',
+      'https://i.postimg.cc/1zkJRGD9/image.pngauto=compress&cs=tinysrgb&w=500',
       'https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=500',
       'https://images.pexels.com/photos/207456/pexels-photo-207456.jpeg?auto=compress&cs=tinysrgb&w=500',
       'https://images.pexels.com/photos/1652209/pexels-photo-1652209.jpeg?auto=compress&cs=tinysrgb&w=500'
